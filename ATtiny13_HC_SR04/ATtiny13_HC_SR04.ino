@@ -17,9 +17,10 @@
 //   http://nerdralph.blogspot.jp/2014/01/avr-half-duplex-software-uart.html
 //
 #define BAUD_RATE 38400
-#include "lib/BasicSerial3/BasicSerial3.h"
-#define Tx    PB3(変更する場合、BasicSerial3.S修正が必要)
-#define Rx    PB4(変更する場合、BasicSerial3.S修正が必要)
+#include "BasicSerial3.h"
+
+#define Tx    PB3 // (変更する場合、BasicSerial3.S修正が必要)
+#define Rx    PB4 // (変更する場合、BasicSerial3.S修正が必要)
 
 // HC-SR04
 #define TRIG  PB0 // 出力ピン
@@ -32,7 +33,7 @@ int8_t n =-1;
   uint16_t v = 10000;
   for (uint8_t i=0; i<5; i++) {
     if (d >= v) {
-      TxByte (d/v + '0');
+      TxByte(d/v + '0');
       d %= v;
       n=i;
     } else {
