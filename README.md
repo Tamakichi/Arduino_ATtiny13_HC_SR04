@@ -10,8 +10,8 @@ https://github.com/MCUdude/MicroCore
 ## 利用ライブラリ
 シリアル出力はNerd Ralphさんが公開しているライブラリ、BasicSerial3 を利用しています。  
 
--  Nerd Ralph - AVR half-duplex software UART supporting single pin operation
-  http://nerdralph.blogspot.jp/2014/01/avr-half-duplex-software-uart.html   
+-  Nerd Ralph - AVR half-duplex software UART supporting single pin operation  
+  http://nerdralph.blogspot.jp/2014/01/avr-half-duplex-software-uart.html   
   BasicSerial3.Sのピン指定を修正して本ライブラリを添付しています。    
 ```
 #define UART_Tx 3
