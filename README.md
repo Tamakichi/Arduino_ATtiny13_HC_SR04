@@ -12,7 +12,8 @@ https://github.com/MCUdude/MicroCore
 
 -  Nerd Ralph - AVR half-duplex software UART supporting single pin operation
   http://nerdralph.blogspot.jp/2014/01/avr-half-duplex-software-uart.html   
-  BasicSerial3.Sのピン指定を修正して本ライブラリを添付しています。  
-
-    #define UART_Tx 3
-    #define UART_Rx 4   
+  BasicSerial3.Sのピン指定を修正して本ライブラリを添付しています。    
+```
+#define UART_Tx 3
+#define UART_Rx 4
+```
